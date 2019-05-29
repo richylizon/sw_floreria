@@ -1,3 +1,12 @@
+La tipica:
+primero: 
+- npm install
+y 
+- npm start 
+para iniciar el servidor  
+
+
+
 # IsoOnlineStore
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
