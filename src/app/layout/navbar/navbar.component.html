@@ -1,0 +1,52 @@
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a routerLink="/">Ciudad Jardín</a>
+                    <img src="https://img.icons8.com/material/24/000000/shopping-cart.png" class="img">
+                    <a data-target="mobile-menu" class="sidenav-trigger">
+
+                        <i class="material-icons">menu</i>
+
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a routerLink="/store">Tienda</a>
+                        </li>
+                        <li><a routerLink="">Inicio Sesion</a></li>
+
+
+                    </ul>
+                </div>
+
+
+
+                <div class="container">
+                    <ul class="tabs tabs-red lighten-2">
+                        <li class="tab"><a href="/store">Catalogo</a></li>
+                        <li class="tab"><a href="/">Tamaño</a></li>
+                        <li class="tab"><a href="/">Temporada</a></li>
+                        <li class="tab"><a href="/">Combos y Descuentos</a></li>
+                        <li class="tab"><a href="/sugerencias">Sugerencias</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div isoSidenav class="sidenav" id="mobile-menu">
+        <ul>
+            <li>
+                <a routerLink="/store" class="sidenav-close">Tienda</a>
+                <a routerLink="/" class="sidenav-close">Iniciar Sesion</a>
+            </li>
+        </ul>
+        <div id="tab" class="col s12">Catalogo</div>
+        <div id="tab" class="col s12">Tamaño</div>
+        <div id="tab" class="col s12">Temporada</div>
+        <div id="tab" class="col s12">Combos y Descuentos</div>
+        <div id="tab" class="col s12">Sugerencias</div>
+    </div>
+
+</header>

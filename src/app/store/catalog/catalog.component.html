@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <p>Buscador de arreglo</p>
+        </div>
+        <input type="text" #searchInput (keyup)="search(searchInput.value)" placeholder="Buscar algun arreglo en particular..." class="input">
+        <div *ngFor="let product of productos$ | async" class="col s12 m3">
+
+            <div class="table-responsive">
+                <table class="table">
+
+                    <tbody>
+                        <tr>
+
+
+                            <td>
+                                <div class="card">
+                                    <div align="center">
+                                        <div class="card-image"></div>
+                                        <img style="width:200px; height:200px;" class="rounded mx-auto d-block img-responsive mt-3" [src]="product.imagen" alt="Card image cap">
+                                        <span class="card-title purple-text">{{product.nombre}}</span>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div align="center">
+                                            <h6 class="card-title font-weight-bold"><b>Precio: </b>{{product.precio}} bs</h6>
+                                        </div>
+                                        <div align="center"> <button class="btn btn-sm btn-primary" (click)="addToCart(item.p_id,1,'')">Agregar a Carrito</button></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--    <div class="card-content">
+                    <p>
+                        <b>Precio: </b> Bs{{product.precio}}
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a (click)="buy(product)">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+    </div>-->
+
+            <div *ngIf="(productos$ | async)?.length < 1">
+                <hr>
+                <p>
+                    No se encuentra su busqueda :(
+                </p>
+            </div>
+
+        </div>

@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/materialize-css/dist/css/materialize.min.css';
+
+iso-root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+body {
+  background-image: url("assets/imagenes/fondo_2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+main {
+  flex: 1 0 auto;
+}
+
+a {
+  cursor: pointer;
+}
