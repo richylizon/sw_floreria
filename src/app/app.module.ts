@@ -13,10 +13,10 @@ import { ProductSearchComponent } from './product-search/product-search.componen
 import { ProductosService } from './store/productos.service';
 import { SugerenciasService } from './sugerencias.service';
 import { SugerenciasComponent } from './sugerencias/sugerencias.component';
-import { ContactoComponent } from './contacto/contacto.component';
+import { DescuentosComponent } from './store/descuentos/descuentos.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductSearchComponent, SugerenciasComponent, ContactoComponent],
+  declarations: [AppComponent, ProductSearchComponent, SugerenciasComponent, DescuentosComponent],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
